@@ -157,6 +157,10 @@ The script:
 5. Optionally flattens the output PDF (if `--flatten-output` is used)
 6. Saves the result to the output directory, maintaining the original directory structure
 
+## Disclaimer
+
+I am not an attorney, and this tool is provided as-is, without any warranties or guarantees of fitness for legal use. This Bates stamping utility may not preserve all metadata or file integrity required for legal proceedings or compliance in your jurisdiction. It is your responsibility to ensure that the use of this tool complies with local laws, court rules, and professional standards. Use at your own risk.
+
 ## License
 
 This project is open source and available under the MIT License.
