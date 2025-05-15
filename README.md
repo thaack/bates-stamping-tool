@@ -161,6 +161,19 @@ The script:
 
 This project is open source and available under the MIT License.
 
+Important licensing note: This script can optionally use Ghostscript, which is licensed under the AGPL (Affero General Public License). If you enable Ghostscript functionality:
+
+This creates a dependency on AGPL-licensed software
+If you distribute this script with Ghostscript integration enabled, you may need to comply with AGPL requirements
+You should consult with a legal professional regarding licensing implications
+
+To avoid AGPL implications:
+
+Use the script without installing Ghostscript (the PyPDF2 fallback will be used instead)
+Remove or disable the Ghostscript-dependent code if redistributing the software
+
+For more information on Ghostscript licensing, visit Ghostscript Licensing
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
