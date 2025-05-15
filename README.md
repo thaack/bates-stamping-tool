@@ -47,7 +47,7 @@ Download and install from [Ghostscript official site](https://www.ghostscript.co
 ### Basic Usage
 
 ```bash
-python improved_stamper.py input_directory output_directory
+python bates_stamper.py input_directory output_directory
 ```
 
 This will process all PDFs in `input_directory` (including subdirectories), add default Bates numbers (BATES-000001, BATES-000002, etc.), and save the results in `output_directory` with the same directory structure.
@@ -55,7 +55,7 @@ This will process all PDFs in `input_directory` (including subdirectories), add 
 ### Advanced Options
 
 ```bash
-python improved_stamper.py input_directory output_directory \
+python bates_stamper.py input_directory output_directory \
   --prefix "CASE-" \
   --start 1000 \
   --position top-right \
@@ -93,13 +93,13 @@ python improved_stamper.py input_directory output_directory \
 ### Example 1: Basic Bates Numbering
 
 ```bash
-python improved_stamper.py ./documents ./stamped_documents
+python bates_stamper.py ./documents ./stamped_documents
 ```
 
 ### Example 2: Custom Prefix and Starting Number
 
 ```bash
-python improved_stamper.py ./evidence ./stamped_evidence --prefix "CASE123-" --start 5000
+python bates_stamper.py ./evidence ./stamped_evidence --prefix "CASE123-" --start 5000
 ```
 
 This will create Bates numbers like CASE123-005000, CASE123-005001, etc.
@@ -107,7 +107,7 @@ This will create Bates numbers like CASE123-005000, CASE123-005001, etc.
 ### Example 3: Red Stamps in Top-Left Corner
 
 ```bash
-python improved_stamper.py ./contracts ./stamped_contracts --position top-left --color "#FF0000" --size 14
+python bates_stamper.py ./contracts ./stamped_contracts --position top-left --color "#FF0000" --size 14
 ```
 
 ### Example 4: Handling Problematic PDFs with Flattening
@@ -115,7 +115,7 @@ python improved_stamper.py ./contracts ./stamped_contracts --position top-left -
 If you encounter issues with blank pages in Adobe Reader:
 
 ```bash
-python improved_stamper.py ./problematic_pdfs ./fixed_pdfs --flatten-input
+python bates_stamper.py ./problematic_pdfs ./fixed_pdfs --flatten-input
 ```
 
 ### Example 5: Maximum Compatibility
@@ -123,7 +123,7 @@ python improved_stamper.py ./problematic_pdfs ./fixed_pdfs --flatten-input
 For maximum compatibility with all PDF viewers:
 
 ```bash
-python improved_stamper.py ./documents ./compatible_docs --flatten-input --flatten-output
+python bates_stamper.py ./documents ./compatible_docs --flatten-input --flatten-output
 ```
 
 ## Troubleshooting
